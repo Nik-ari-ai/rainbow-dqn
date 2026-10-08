@@ -1,0 +1,4 @@
+# Notebook only. Add training dependencies after choosing a Rainbow implementation.
+jupyterlab
+numpy
+matplotlib

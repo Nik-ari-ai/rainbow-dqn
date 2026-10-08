@@ -1,0 +1,28 @@
+# Python and notebooks
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local settings and secrets
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Model weights, training logs and recordings
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+runs/
+wandb/
+*.mp4
+*.mov
+*.webm
