@@ -1,0 +1,9 @@
+      Random: score    372.7 ±  196.6  (median 365, max 930)
+     Rainbow: score   2072.7 ±  932.5  (median 2005, max 3930)
+         DQN: score   1461.7 ±  736.3  (median 1455, max 3210)
+
+  agent  mean_score  std_score  median   min    max  mean_length  mean_waves  accuracy  x_random
+ Random      372.67     196.59   365.0  30.0  930.0       429.47        0.03      0.28      1.00
+Rainbow     2072.67     932.45  2005.0 740.0 3930.0      1011.50        2.97      0.65      5.56
+    DQN     1461.67     736.29  1455.0 360.0 3210.0       721.13        2.13      0.68      3.92
+plot: results\comparison.png

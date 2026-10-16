@@ -1,0 +1,244 @@
+run dqn: env=custom obs=pixels reward=score preset=custom device=cuda
+components: double=False per=False dueling=False n_step=1 distributional=False noisy=False
+random agent score on eval seeds: 305.0
+step    10,000 |   2168 steps/s | episodes    20 | avg score (20)   372.5 | loss 0.051 | Q -0.01 | eps 0.960 | ETA 0.3 h
+step    20,000 |   1045 steps/s | episodes    41 | avg score (20)   370.0 | loss 0.002 | Q 0.35 | eps 0.921 | ETA 0.5 h
+step    30,000 |    879 steps/s | episodes    63 | avg score (20)   373.0 | loss 0.041 | Q 0.70 | eps 0.881 | ETA 0.6 h
+step    40,000 |    805 steps/s | episodes    87 | avg score (20)   346.0 | loss 0.015 | Q 0.98 | eps 0.842 | ETA 0.7 h
+step    50,000 |    763 steps/s | episodes   112 | avg score (20)   360.0 | loss 0.016 | Q 1.47 | eps 0.802 | ETA 0.7 h
+  eval @ 50,000: score 350.0 ± 104.1 (random 305.0)
+step    60,000 |    704 steps/s | episodes   140 | avg score (20)   343.5 | loss 0.016 | Q 2.13 | eps 0.762 | ETA 0.8 h
+step    70,000 |    693 steps/s | episodes   169 | avg score (20)   322.5 | loss 0.005 | Q 2.75 | eps 0.723 | ETA 0.8 h
+step    80,000 |    683 steps/s | episodes   201 | avg score (20)   323.0 | loss 0.016 | Q 3.08 | eps 0.683 | ETA 0.8 h
+step    90,000 |    674 steps/s | episodes   229 | avg score (20)   390.5 | loss 0.008 | Q 3.29 | eps 0.644 | ETA 0.8 h
+step   100,000 |    664 steps/s | episodes   262 | avg score (20)   364.5 | loss 0.030 | Q 4.06 | eps 0.604 | ETA 0.8 h
+  eval @ 100,000: score 426.0 ± 150.1 (random 305.0)
+step   110,000 |    646 steps/s | episodes   295 | avg score (20)   330.5 | loss 0.029 | Q 4.35 | eps 0.564 | ETA 0.8 h
+step   120,000 |    640 steps/s | episodes   326 | avg score (20)   356.0 | loss 0.014 | Q 4.60 | eps 0.525 | ETA 0.8 h
+step   130,000 |    636 steps/s | episodes   354 | avg score (20)   405.0 | loss 0.007 | Q 4.71 | eps 0.485 | ETA 0.8 h
+step   140,000 |    633 steps/s | episodes   380 | avg score (20)   407.0 | loss 0.025 | Q 4.93 | eps 0.446 | ETA 0.8 h
+step   150,000 |    629 steps/s | episodes   412 | avg score (20)   321.0 | loss 0.013 | Q 5.33 | eps 0.406 | ETA 0.8 h
+  eval @ 150,000: score 479.0 ± 225.0 (random 305.0)
+step   160,000 |    617 steps/s | episodes   438 | avg score (20)   455.5 | loss 0.024 | Q 5.99 | eps 0.366 | ETA 0.8 h
+step   170,000 |    614 steps/s | episodes   469 | avg score (20)   312.0 | loss 0.027 | Q 6.00 | eps 0.327 | ETA 0.8 h
+step   180,000 |    611 steps/s | episodes   499 | avg score (20)   338.0 | loss 0.017 | Q 6.26 | eps 0.287 | ETA 0.8 h
+step   190,000 |    608 steps/s | episodes   531 | avg score (20)   362.0 | loss 0.208 | Q 6.81 | eps 0.248 | ETA 0.8 h
+step   200,000 |    605 steps/s | episodes   561 | avg score (20)   438.0 | loss 0.016 | Q 6.76 | eps 0.208 | ETA 0.8 h
+  eval @ 200,000: score 512.0 ± 270.1 (random 305.0)
+step   210,000 |    594 steps/s | episodes   591 | avg score (20)   491.5 | loss 0.012 | Q 7.26 | eps 0.168 | ETA 0.8 h
+step   220,000 |    590 steps/s | episodes   623 | avg score (20)   441.0 | loss 0.014 | Q 6.75 | eps 0.129 | ETA 0.8 h
+step   230,000 |    586 steps/s | episodes   651 | avg score (20)   439.5 | loss 0.027 | Q 7.15 | eps 0.089 | ETA 0.8 h
+step   240,000 |    582 steps/s | episodes   678 | avg score (20)   506.0 | loss 0.009 | Q 6.94 | eps 0.050 | ETA 0.8 h
+step   250,000 |    577 steps/s | episodes   704 | avg score (20)   420.0 | loss 0.014 | Q 7.49 | eps 0.010 | ETA 0.8 h
+  eval @ 250,000: score 364.0 ± 123.4 (random 305.0)
+step   260,000 |    569 steps/s | episodes   728 | avg score (20)   473.5 | loss 0.017 | Q 7.05 | eps 0.010 | ETA 0.8 h
+step   270,000 |    565 steps/s | episodes   749 | avg score (20)   609.0 | loss 0.026 | Q 7.12 | eps 0.010 | ETA 0.9 h
+step   280,000 |    561 steps/s | episodes   777 | avg score (20)   434.0 | loss 0.017 | Q 7.40 | eps 0.010 | ETA 0.9 h
+step   290,000 |    559 steps/s | episodes   800 | avg score (20)   534.0 | loss 0.024 | Q 7.96 | eps 0.010 | ETA 0.8 h
+step   300,000 |    556 steps/s | episodes   824 | avg score (20)   531.5 | loss 0.021 | Q 7.32 | eps 0.010 | ETA 0.8 h
+  eval @ 300,000: score 390.0 ± 115.2 (random 305.0)
+step   310,000 |    551 steps/s | episodes   848 | avg score (20)   508.5 | loss 0.022 | Q 7.71 | eps 0.010 | ETA 0.9 h
+step   320,000 |    549 steps/s | episodes   873 | avg score (20)   500.5 | loss 0.012 | Q 8.23 | eps 0.010 | ETA 0.9 h
+step   330,000 |    547 steps/s | episodes   899 | avg score (20)   464.0 | loss 0.149 | Q 7.11 | eps 0.010 | ETA 0.8 h
+step   340,000 |    544 steps/s | episodes   923 | avg score (20)   484.5 | loss 0.016 | Q 8.32 | eps 0.010 | ETA 0.8 h
+step   350,000 |    542 steps/s | episodes   952 | avg score (20)   399.5 | loss 0.026 | Q 7.40 | eps 0.010 | ETA 0.8 h
+  eval @ 350,000: score 470.0 ± 225.7 (random 305.0)
+step   360,000 |    538 steps/s | episodes   978 | avg score (20)   471.0 | loss 0.024 | Q 7.93 | eps 0.010 | ETA 0.8 h
+step   370,000 |    536 steps/s | episodes  1009 | avg score (20)   377.0 | loss 0.017 | Q 8.57 | eps 0.010 | ETA 0.8 h
+step   380,000 |    535 steps/s | episodes  1032 | avg score (20)   516.5 | loss 0.026 | Q 8.33 | eps 0.010 | ETA 0.8 h
+step   390,000 |    534 steps/s | episodes  1060 | avg score (20)   443.5 | loss 0.011 | Q 8.53 | eps 0.010 | ETA 0.8 h
+step   400,000 |    532 steps/s | episodes  1087 | avg score (20)   551.0 | loss 0.008 | Q 8.17 | eps 0.010 | ETA 0.8 h
+  eval @ 400,000: score 505.0 ± 125.6 (random 305.0)
+step   410,000 |    528 steps/s | episodes  1114 | avg score (20)   466.5 | loss 0.026 | Q 8.81 | eps 0.010 | ETA 0.8 h
+step   420,000 |    527 steps/s | episodes  1138 | avg score (20)   478.0 | loss 0.016 | Q 8.36 | eps 0.010 | ETA 0.8 h
+step   430,000 |    526 steps/s | episodes  1167 | avg score (20)   429.5 | loss 0.022 | Q 8.28 | eps 0.010 | ETA 0.8 h
+step   440,000 |    525 steps/s | episodes  1197 | avg score (20)   403.5 | loss 0.012 | Q 8.52 | eps 0.010 | ETA 0.8 h
+step   450,000 |    524 steps/s | episodes  1224 | avg score (20)   364.5 | loss 0.022 | Q 8.05 | eps 0.010 | ETA 0.8 h
+  eval @ 450,000: score 499.0 ± 136.2 (random 305.0)
+step   460,000 |    522 steps/s | episodes  1249 | avg score (20)   495.0 | loss 0.025 | Q 8.59 | eps 0.010 | ETA 0.8 h
+step   470,000 |    521 steps/s | episodes  1275 | avg score (20)   489.5 | loss 0.017 | Q 7.04 | eps 0.010 | ETA 0.8 h
+step   480,000 |    520 steps/s | episodes  1300 | avg score (20)   512.5 | loss 0.030 | Q 7.09 | eps 0.010 | ETA 0.8 h
+step   490,000 |    519 steps/s | episodes  1325 | avg score (20)   532.5 | loss 0.015 | Q 8.11 | eps 0.010 | ETA 0.8 h
+step   500,000 |    518 steps/s | episodes  1355 | avg score (20)   436.0 | loss 0.023 | Q 8.68 | eps 0.010 | ETA 0.8 h
+  eval @ 500,000: score 531.0 ± 181.7 (random 305.0)
+step   510,000 |    515 steps/s | episodes  1376 | avg score (20)   584.0 | loss 0.014 | Q 8.00 | eps 0.010 | ETA 0.8 h
+step   520,000 |    515 steps/s | episodes  1405 | avg score (20)   478.0 | loss 0.016 | Q 8.67 | eps 0.010 | ETA 0.8 h
+step   530,000 |    515 steps/s | episodes  1426 | avg score (20)   604.5 | loss 0.024 | Q 7.82 | eps 0.010 | ETA 0.8 h
+step   540,000 |    514 steps/s | episodes  1450 | avg score (20)   528.5 | loss 0.007 | Q 8.90 | eps 0.010 | ETA 0.8 h
+step   550,000 |    513 steps/s | episodes  1474 | avg score (20)   559.5 | loss 0.013 | Q 8.78 | eps 0.010 | ETA 0.8 h
+  eval @ 550,000: score 598.0 ± 322.7 (random 305.0)
+step   560,000 |    511 steps/s | episodes  1498 | avg score (20)   532.5 | loss 0.014 | Q 7.20 | eps 0.010 | ETA 0.8 h
+step   570,000 |    510 steps/s | episodes  1524 | avg score (20)   492.0 | loss 0.014 | Q 7.57 | eps 0.010 | ETA 0.8 h
+step   580,000 |    510 steps/s | episodes  1549 | avg score (20)   543.0 | loss 0.017 | Q 9.69 | eps 0.010 | ETA 0.8 h
+step   590,000 |    510 steps/s | episodes  1572 | avg score (20)   559.5 | loss 0.014 | Q 8.36 | eps 0.010 | ETA 0.8 h
+step   600,000 |    510 steps/s | episodes  1597 | avg score (20)   551.5 | loss 0.032 | Q 7.73 | eps 0.010 | ETA 0.8 h
+  eval @ 600,000: score 533.0 ± 184.2 (random 305.0)
+step   610,000 |    508 steps/s | episodes  1622 | avg score (20)   538.0 | loss 0.032 | Q 8.24 | eps 0.010 | ETA 0.8 h
+step   620,000 |    508 steps/s | episodes  1647 | avg score (20)   557.0 | loss 0.012 | Q 8.27 | eps 0.010 | ETA 0.8 h
+step   630,000 |    507 steps/s | episodes  1671 | avg score (20)   522.0 | loss 0.024 | Q 8.07 | eps 0.010 | ETA 0.8 h
+step   640,000 |    507 steps/s | episodes  1695 | avg score (20)   522.0 | loss 0.009 | Q 7.95 | eps 0.010 | ETA 0.7 h
+step   650,000 |    506 steps/s | episodes  1719 | avg score (20)   630.0 | loss 0.022 | Q 8.79 | eps 0.010 | ETA 0.7 h
+  eval @ 650,000: score 537.0 ± 253.5 (random 305.0)
+step   660,000 |    505 steps/s | episodes  1740 | avg score (20)   656.0 | loss 0.030 | Q 9.49 | eps 0.010 | ETA 0.7 h
+step   670,000 |    505 steps/s | episodes  1762 | avg score (20)   574.5 | loss 0.029 | Q 8.65 | eps 0.010 | ETA 0.7 h
+step   680,000 |    505 steps/s | episodes  1784 | avg score (20)   620.0 | loss 0.014 | Q 8.00 | eps 0.010 | ETA 0.7 h
+step   690,000 |    504 steps/s | episodes  1813 | avg score (20)   497.5 | loss 0.023 | Q 8.42 | eps 0.010 | ETA 0.7 h
+step   700,000 |    504 steps/s | episodes  1836 | avg score (20)   631.5 | loss 0.013 | Q 8.17 | eps 0.010 | ETA 0.7 h
+  eval @ 700,000: score 553.0 ± 175.8 (random 305.0)
+step   710,000 |    502 steps/s | episodes  1861 | avg score (20)   509.5 | loss 0.020 | Q 8.69 | eps 0.010 | ETA 0.7 h
+step   720,000 |    502 steps/s | episodes  1887 | avg score (20)   557.5 | loss 0.019 | Q 9.85 | eps 0.010 | ETA 0.7 h
+step   730,000 |    502 steps/s | episodes  1910 | avg score (20)   602.0 | loss 0.338 | Q 7.77 | eps 0.010 | ETA 0.7 h
+step   740,000 |    502 steps/s | episodes  1936 | avg score (20)   538.0 | loss 0.019 | Q 8.51 | eps 0.010 | ETA 0.7 h
+step   750,000 |    502 steps/s | episodes  1958 | avg score (20)   635.5 | loss 0.008 | Q 8.75 | eps 0.010 | ETA 0.7 h
+  eval @ 750,000: score 546.0 ± 342.6 (random 305.0)
+step   760,000 |    501 steps/s | episodes  1984 | avg score (20)   544.0 | loss 0.048 | Q 8.83 | eps 0.010 | ETA 0.7 h
+step   770,000 |    501 steps/s | episodes  2004 | avg score (20)   742.0 | loss 0.165 | Q 9.90 | eps 0.010 | ETA 0.7 h
+step   780,000 |    500 steps/s | episodes  2026 | avg score (20)   586.0 | loss 0.012 | Q 8.77 | eps 0.010 | ETA 0.7 h
+step   790,000 |    500 steps/s | episodes  2047 | avg score (20)   661.5 | loss 0.027 | Q 10.04 | eps 0.010 | ETA 0.7 h
+step   800,000 |    500 steps/s | episodes  2074 | avg score (20)   502.5 | loss 0.011 | Q 7.97 | eps 0.010 | ETA 0.7 h
+  eval @ 800,000: score 671.0 ± 425.6 (random 305.0)
+step   810,000 |    499 steps/s | episodes  2099 | avg score (20)   595.0 | loss 0.015 | Q 8.69 | eps 0.010 | ETA 0.7 h
+step   820,000 |    499 steps/s | episodes  2119 | avg score (20)   695.5 | loss 0.305 | Q 7.98 | eps 0.010 | ETA 0.7 h
+step   830,000 |    499 steps/s | episodes  2144 | avg score (20)   602.5 | loss 0.053 | Q 8.39 | eps 0.010 | ETA 0.7 h
+step   840,000 |    499 steps/s | episodes  2166 | avg score (20)   612.5 | loss 0.011 | Q 8.15 | eps 0.010 | ETA 0.6 h
+step   850,000 |    499 steps/s | episodes  2193 | avg score (20)   524.0 | loss 0.015 | Q 7.92 | eps 0.010 | ETA 0.6 h
+  eval @ 850,000: score 607.0 ± 294.2 (random 305.0)
+step   860,000 |    497 steps/s | episodes  2219 | avg score (20)   526.0 | loss 0.016 | Q 9.17 | eps 0.010 | ETA 0.6 h
+step   870,000 |    497 steps/s | episodes  2241 | avg score (20)   735.0 | loss 0.016 | Q 7.42 | eps 0.010 | ETA 0.6 h
+step   880,000 |    497 steps/s | episodes  2263 | avg score (20)   613.5 | loss 0.022 | Q 8.23 | eps 0.010 | ETA 0.6 h
+step   890,000 |    497 steps/s | episodes  2283 | avg score (20)   765.0 | loss 0.021 | Q 7.43 | eps 0.010 | ETA 0.6 h
+step   900,000 |    497 steps/s | episodes  2301 | avg score (20)   817.0 | loss 0.025 | Q 8.59 | eps 0.010 | ETA 0.6 h
+  eval @ 900,000: score 639.0 ± 336.5 (random 305.0)
+step   910,000 |    496 steps/s | episodes  2317 | avg score (20)   908.0 | loss 0.012 | Q 7.82 | eps 0.010 | ETA 0.6 h
+step   920,000 |    495 steps/s | episodes  2340 | avg score (20)   602.5 | loss 0.026 | Q 7.57 | eps 0.010 | ETA 0.6 h
+step   930,000 |    495 steps/s | episodes  2361 | avg score (20)   721.0 | loss 0.312 | Q 8.13 | eps 0.010 | ETA 0.6 h
+step   940,000 |    495 steps/s | episodes  2382 | avg score (20)   712.0 | loss 0.035 | Q 7.33 | eps 0.010 | ETA 0.6 h
+step   950,000 |    495 steps/s | episodes  2402 | avg score (20)   770.0 | loss 0.147 | Q 7.85 | eps 0.010 | ETA 0.6 h
+  eval @ 950,000: score 793.0 ± 307.5 (random 305.0)
+step   960,000 |    494 steps/s | episodes  2421 | avg score (20)   811.5 | loss 0.016 | Q 8.49 | eps 0.010 | ETA 0.6 h
+step   970,000 |    494 steps/s | episodes  2445 | avg score (20)   692.0 | loss 0.020 | Q 8.40 | eps 0.010 | ETA 0.6 h
+step   980,000 |    494 steps/s | episodes  2461 | avg score (20)   986.5 | loss 0.012 | Q 8.95 | eps 0.010 | ETA 0.6 h
+step   990,000 |    493 steps/s | episodes  2485 | avg score (20)   638.5 | loss 0.047 | Q 8.38 | eps 0.010 | ETA 0.6 h
+step 1,000,000 |    493 steps/s | episodes  2508 | avg score (20)   653.0 | loss 0.015 | Q 8.12 | eps 0.010 | ETA 0.6 h
+  eval @ 1,000,000: score 552.0 ± 158.9 (random 305.0)
+step 1,010,000 |    492 steps/s | episodes  2528 | avg score (20)   772.0 | loss 0.024 | Q 9.64 | eps 0.010 | ETA 0.6 h
+step 1,020,000 |    492 steps/s | episodes  2548 | avg score (20)   769.0 | loss 0.012 | Q 8.83 | eps 0.010 | ETA 0.6 h
+step 1,030,000 |    492 steps/s | episodes  2564 | avg score (20)   917.0 | loss 0.013 | Q 7.58 | eps 0.010 | ETA 0.5 h
+step 1,040,000 |    492 steps/s | episodes  2585 | avg score (20)   764.0 | loss 0.034 | Q 7.68 | eps 0.010 | ETA 0.5 h
+step 1,050,000 |    492 steps/s | episodes  2605 | avg score (20)   800.0 | loss 0.021 | Q 9.44 | eps 0.010 | ETA 0.5 h
+  eval @ 1,050,000: score 1104.0 ± 639.2 (random 305.0)
+step 1,060,000 |    491 steps/s | episodes  2623 | avg score (20)   835.0 | loss 0.040 | Q 7.93 | eps 0.010 | ETA 0.5 h
+step 1,070,000 |    490 steps/s | episodes  2645 | avg score (20)   709.0 | loss 0.013 | Q 9.47 | eps 0.010 | ETA 0.5 h
+step 1,080,000 |    490 steps/s | episodes  2665 | avg score (20)   718.0 | loss 0.034 | Q 8.59 | eps 0.010 | ETA 0.5 h
+step 1,090,000 |    490 steps/s | episodes  2686 | avg score (20)   803.5 | loss 0.084 | Q 9.08 | eps 0.010 | ETA 0.5 h
+step 1,100,000 |    490 steps/s | episodes  2702 | avg score (20)  1088.5 | loss 0.029 | Q 9.13 | eps 0.010 | ETA 0.5 h
+  eval @ 1,100,000: score 965.0 ± 325.8 (random 305.0)
+step 1,110,000 |    489 steps/s | episodes  2722 | avg score (20)   789.5 | loss 0.041 | Q 8.79 | eps 0.010 | ETA 0.5 h
+step 1,120,000 |    489 steps/s | episodes  2738 | avg score (20)   954.0 | loss 0.032 | Q 8.69 | eps 0.010 | ETA 0.5 h
+step 1,130,000 |    489 steps/s | episodes  2754 | avg score (20)   986.5 | loss 0.025 | Q 8.79 | eps 0.010 | ETA 0.5 h
+step 1,140,000 |    489 steps/s | episodes  2773 | avg score (20)   816.5 | loss 0.037 | Q 9.61 | eps 0.010 | ETA 0.5 h
+step 1,150,000 |    489 steps/s | episodes  2787 | avg score (20)  1136.5 | loss 0.027 | Q 9.47 | eps 0.010 | ETA 0.5 h
+  eval @ 1,150,000: score 1148.0 ± 661.9 (random 305.0)
+step 1,160,000 |    488 steps/s | episodes  2804 | avg score (20)   960.0 | loss 0.039 | Q 9.76 | eps 0.010 | ETA 0.5 h
+step 1,170,000 |    488 steps/s | episodes  2820 | avg score (20)   932.0 | loss 0.042 | Q 9.89 | eps 0.010 | ETA 0.5 h
+step 1,180,000 |    488 steps/s | episodes  2840 | avg score (20)   838.5 | loss 0.085 | Q 10.01 | eps 0.010 | ETA 0.5 h
+step 1,190,000 |    488 steps/s | episodes  2855 | avg score (20)  1048.5 | loss 0.041 | Q 9.82 | eps 0.010 | ETA 0.5 h
+step 1,200,000 |    488 steps/s | episodes  2870 | avg score (20)   962.0 | loss 0.046 | Q 8.43 | eps 0.010 | ETA 0.5 h
+  eval @ 1,200,000: score 700.0 ± 305.5 (random 305.0)
+step 1,210,000 |    487 steps/s | episodes  2888 | avg score (20)   989.0 | loss 0.029 | Q 10.28 | eps 0.010 | ETA 0.5 h
+step 1,220,000 |    487 steps/s | episodes  2907 | avg score (20)   848.5 | loss 0.024 | Q 10.17 | eps 0.010 | ETA 0.4 h
+step 1,230,000 |    487 steps/s | episodes  2925 | avg score (20)   936.0 | loss 0.021 | Q 9.86 | eps 0.010 | ETA 0.4 h
+step 1,240,000 |    487 steps/s | episodes  2943 | avg score (20)   982.0 | loss 0.028 | Q 9.19 | eps 0.010 | ETA 0.4 h
+step 1,250,000 |    487 steps/s | episodes  2960 | avg score (20)   960.0 | loss 0.286 | Q 9.88 | eps 0.010 | ETA 0.4 h
+  eval @ 1,250,000: score 895.0 ± 432.7 (random 305.0)
+step 1,260,000 |    486 steps/s | episodes  2978 | avg score (20)   975.0 | loss 0.021 | Q 10.08 | eps 0.010 | ETA 0.4 h
+step 1,270,000 |    486 steps/s | episodes  2997 | avg score (20)  1034.0 | loss 0.040 | Q 10.99 | eps 0.010 | ETA 0.4 h
+step 1,280,000 |    486 steps/s | episodes  3015 | avg score (20)   867.0 | loss 0.060 | Q 11.12 | eps 0.010 | ETA 0.4 h
+step 1,290,000 |    486 steps/s | episodes  3031 | avg score (20)  1011.0 | loss 0.042 | Q 11.03 | eps 0.010 | ETA 0.4 h
+step 1,300,000 |    486 steps/s | episodes  3050 | avg score (20)   918.5 | loss 0.040 | Q 11.30 | eps 0.010 | ETA 0.4 h
+  eval @ 1,300,000: score 896.0 ± 504.3 (random 305.0)
+step 1,310,000 |    485 steps/s | episodes  3070 | avg score (20)   873.0 | loss 0.044 | Q 11.26 | eps 0.010 | ETA 0.4 h
+step 1,320,000 |    485 steps/s | episodes  3086 | avg score (20)   996.0 | loss 0.026 | Q 12.06 | eps 0.010 | ETA 0.4 h
+step 1,330,000 |    485 steps/s | episodes  3103 | avg score (20)  1187.5 | loss 0.030 | Q 11.55 | eps 0.010 | ETA 0.4 h
+step 1,340,000 |    486 steps/s | episodes  3121 | avg score (20)   971.0 | loss 0.038 | Q 12.16 | eps 0.010 | ETA 0.4 h
+step 1,350,000 |    486 steps/s | episodes  3140 | avg score (20)   841.5 | loss 0.026 | Q 11.97 | eps 0.010 | ETA 0.4 h
+  eval @ 1,350,000: score 1194.0 ± 756.5 (random 305.0)
+step 1,360,000 |    485 steps/s | episodes  3159 | avg score (20)   905.5 | loss 0.038 | Q 12.48 | eps 0.010 | ETA 0.4 h
+step 1,370,000 |    485 steps/s | episodes  3175 | avg score (20)  1040.5 | loss 0.072 | Q 12.47 | eps 0.010 | ETA 0.4 h
+step 1,380,000 |    485 steps/s | episodes  3192 | avg score (20)   976.5 | loss 0.071 | Q 13.00 | eps 0.010 | ETA 0.4 h
+step 1,390,000 |    485 steps/s | episodes  3210 | avg score (20)  1048.0 | loss 0.060 | Q 12.59 | eps 0.010 | ETA 0.3 h
+step 1,400,000 |    485 steps/s | episodes  3230 | avg score (20)   876.0 | loss 0.011 | Q 13.33 | eps 0.010 | ETA 0.3 h
+  eval @ 1,400,000: score 817.0 ± 628.2 (random 305.0)
+step 1,410,000 |    484 steps/s | episodes  3247 | avg score (20)   976.0 | loss 0.016 | Q 12.24 | eps 0.010 | ETA 0.3 h
+step 1,420,000 |    484 steps/s | episodes  3263 | avg score (20)  1139.5 | loss 0.022 | Q 12.54 | eps 0.010 | ETA 0.3 h
+step 1,430,000 |    484 steps/s | episodes  3283 | avg score (20)   850.0 | loss 0.039 | Q 12.52 | eps 0.010 | ETA 0.3 h
+step 1,440,000 |    484 steps/s | episodes  3302 | avg score (20)   961.0 | loss 0.030 | Q 13.34 | eps 0.010 | ETA 0.3 h
+step 1,450,000 |    484 steps/s | episodes  3318 | avg score (20)  1161.0 | loss 0.018 | Q 13.55 | eps 0.010 | ETA 0.3 h
+  eval @ 1,450,000: score 1030.0 ± 552.4 (random 305.0)
+step 1,460,000 |    484 steps/s | episodes  3335 | avg score (20)  1049.5 | loss 0.026 | Q 12.55 | eps 0.010 | ETA 0.3 h
+step 1,470,000 |    484 steps/s | episodes  3352 | avg score (20)  1242.5 | loss 0.033 | Q 13.06 | eps 0.010 | ETA 0.3 h
+step 1,480,000 |    484 steps/s | episodes  3365 | avg score (20)  1337.0 | loss 0.372 | Q 12.67 | eps 0.010 | ETA 0.3 h
+step 1,490,000 |    484 steps/s | episodes  3383 | avg score (20)  1069.0 | loss 0.018 | Q 13.23 | eps 0.010 | ETA 0.3 h
+step 1,500,000 |    484 steps/s | episodes  3400 | avg score (20)  1173.5 | loss 0.489 | Q 13.74 | eps 0.010 | ETA 0.3 h
+  eval @ 1,500,000: score 558.0 ± 201.1 (random 305.0)
+step 1,510,000 |    483 steps/s | episodes  3413 | avg score (20)  1295.0 | loss 0.020 | Q 12.94 | eps 0.010 | ETA 0.3 h
+step 1,520,000 |    483 steps/s | episodes  3426 | avg score (20)  1392.0 | loss 0.021 | Q 13.00 | eps 0.010 | ETA 0.3 h
+step 1,530,000 |    483 steps/s | episodes  3439 | avg score (20)  1408.5 | loss 0.018 | Q 12.95 | eps 0.010 | ETA 0.3 h
+step 1,540,000 |    483 steps/s | episodes  3455 | avg score (20)  1206.0 | loss 0.020 | Q 13.62 | eps 0.010 | ETA 0.3 h
+step 1,550,000 |    483 steps/s | episodes  3471 | avg score (20)  1313.5 | loss 0.083 | Q 13.46 | eps 0.010 | ETA 0.3 h
+  eval @ 1,550,000: score 1273.0 ± 457.5 (random 305.0)
+step 1,560,000 |    482 steps/s | episodes  3487 | avg score (20)  1217.5 | loss 0.048 | Q 13.92 | eps 0.010 | ETA 0.3 h
+step 1,570,000 |    482 steps/s | episodes  3507 | avg score (20)   986.0 | loss 0.068 | Q 14.42 | eps 0.010 | ETA 0.2 h
+step 1,580,000 |    482 steps/s | episodes  3523 | avg score (20)  1086.0 | loss 0.058 | Q 13.92 | eps 0.010 | ETA 0.2 h
+step 1,590,000 |    483 steps/s | episodes  3537 | avg score (20)  1126.0 | loss 0.033 | Q 14.25 | eps 0.010 | ETA 0.2 h
+step 1,600,000 |    482 steps/s | episodes  3552 | avg score (20)  1362.5 | loss 0.085 | Q 14.24 | eps 0.010 | ETA 0.2 h
+  eval @ 1,600,000: score 1911.0 ± 554.4 (random 305.0)
+step 1,610,000 |    481 steps/s | episodes  3568 | avg score (20)  1122.5 | loss 0.019 | Q 13.95 | eps 0.010 | ETA 0.2 h
+step 1,620,000 |    481 steps/s | episodes  3580 | avg score (20)  1391.5 | loss 0.028 | Q 13.49 | eps 0.010 | ETA 0.2 h
+step 1,630,000 |    481 steps/s | episodes  3596 | avg score (20)  1234.0 | loss 0.027 | Q 13.38 | eps 0.010 | ETA 0.2 h
+step 1,640,000 |    481 steps/s | episodes  3610 | avg score (20)  1161.0 | loss 0.041 | Q 14.10 | eps 0.010 | ETA 0.2 h
+step 1,650,000 |    481 steps/s | episodes  3628 | avg score (20)  1136.5 | loss 0.029 | Q 13.57 | eps 0.010 | ETA 0.2 h
+  eval @ 1,650,000: score 1510.0 ± 792.9 (random 305.0)
+step 1,660,000 |    481 steps/s | episodes  3646 | avg score (20)  1048.0 | loss 0.025 | Q 13.84 | eps 0.010 | ETA 0.2 h
+step 1,670,000 |    481 steps/s | episodes  3656 | avg score (20)  1469.5 | loss 0.068 | Q 13.45 | eps 0.010 | ETA 0.2 h
+step 1,680,000 |    481 steps/s | episodes  3674 | avg score (20)  1100.5 | loss 0.052 | Q 13.72 | eps 0.010 | ETA 0.2 h
+step 1,690,000 |    481 steps/s | episodes  3692 | avg score (20)  1199.0 | loss 0.031 | Q 13.54 | eps 0.010 | ETA 0.2 h
+step 1,700,000 |    481 steps/s | episodes  3708 | avg score (20)  1245.0 | loss 0.046 | Q 13.91 | eps 0.010 | ETA 0.2 h
+  eval @ 1,700,000: score 939.0 ± 461.2 (random 305.0)
+step 1,710,000 |    480 steps/s | episodes  3724 | avg score (20)  1268.5 | loss 0.027 | Q 13.62 | eps 0.010 | ETA 0.2 h
+step 1,720,000 |    480 steps/s | episodes  3742 | avg score (20)   963.0 | loss 0.038 | Q 13.61 | eps 0.010 | ETA 0.2 h
+step 1,730,000 |    480 steps/s | episodes  3758 | avg score (20)  1232.0 | loss 0.022 | Q 14.00 | eps 0.010 | ETA 0.2 h
+step 1,740,000 |    480 steps/s | episodes  3775 | avg score (20)  1210.5 | loss 0.025 | Q 13.98 | eps 0.010 | ETA 0.2 h
+step 1,750,000 |    480 steps/s | episodes  3788 | avg score (20)  1458.0 | loss 0.052 | Q 14.46 | eps 0.010 | ETA 0.1 h
+  eval @ 1,750,000: score 1314.0 ± 886.0 (random 305.0)
+step 1,760,000 |    479 steps/s | episodes  3803 | avg score (20)  1353.0 | loss 0.375 | Q 14.28 | eps 0.010 | ETA 0.1 h
+step 1,770,000 |    480 steps/s | episodes  3816 | avg score (20)  1424.0 | loss 0.036 | Q 14.20 | eps 0.010 | ETA 0.1 h
+step 1,780,000 |    480 steps/s | episodes  3834 | avg score (20)  1336.0 | loss 0.026 | Q 14.10 | eps 0.010 | ETA 0.1 h
+step 1,790,000 |    480 steps/s | episodes  3845 | avg score (20)  1349.0 | loss 0.048 | Q 14.60 | eps 0.010 | ETA 0.1 h
+step 1,800,000 |    480 steps/s | episodes  3863 | avg score (20)  1228.0 | loss 0.060 | Q 14.08 | eps 0.010 | ETA 0.1 h
+  eval @ 1,800,000: score 1851.0 ± 803.0 (random 305.0)
+step 1,810,000 |    479 steps/s | episodes  3878 | avg score (20)  1242.5 | loss 0.041 | Q 13.83 | eps 0.010 | ETA 0.1 h
+step 1,820,000 |    479 steps/s | episodes  3892 | avg score (20)  1566.5 | loss 0.014 | Q 14.37 | eps 0.010 | ETA 0.1 h
+step 1,830,000 |    479 steps/s | episodes  3908 | avg score (20)  1329.0 | loss 0.033 | Q 14.40 | eps 0.010 | ETA 0.1 h
+step 1,840,000 |    479 steps/s | episodes  3922 | avg score (20)  1396.0 | loss 0.016 | Q 14.47 | eps 0.010 | ETA 0.1 h
+step 1,850,000 |    479 steps/s | episodes  3936 | avg score (20)  1426.0 | loss 0.021 | Q 14.41 | eps 0.010 | ETA 0.1 h
+  eval @ 1,850,000: score 1241.0 ± 478.2 (random 305.0)
+step 1,860,000 |    478 steps/s | episodes  3949 | avg score (20)  1566.0 | loss 0.018 | Q 14.97 | eps 0.010 | ETA 0.1 h
+step 1,870,000 |    478 steps/s | episodes  3964 | avg score (20)  1362.5 | loss 0.016 | Q 14.87 | eps 0.010 | ETA 0.1 h
+step 1,880,000 |    479 steps/s | episodes  3979 | avg score (20)  1347.0 | loss 0.034 | Q 14.21 | eps 0.010 | ETA 0.1 h
+step 1,890,000 |    479 steps/s | episodes  3997 | avg score (20)  1058.0 | loss 0.053 | Q 14.92 | eps 0.010 | ETA 0.1 h
+step 1,900,000 |    479 steps/s | episodes  4014 | avg score (20)  1194.0 | loss 0.029 | Q 14.27 | eps 0.010 | ETA 0.1 h
+  eval @ 1,900,000: score 1285.0 ± 751.7 (random 305.0)
+step 1,910,000 |    478 steps/s | episodes  4031 | avg score (20)  1315.5 | loss 0.034 | Q 14.60 | eps 0.010 | ETA 0.1 h
+step 1,920,000 |    478 steps/s | episodes  4044 | avg score (20)  1416.5 | loss 0.066 | Q 15.03 | eps 0.010 | ETA 0.0 h
+step 1,930,000 |    478 steps/s | episodes  4060 | avg score (20)  1485.0 | loss 0.043 | Q 14.89 | eps 0.010 | ETA 0.0 h
+step 1,940,000 |    478 steps/s | episodes  4073 | avg score (20)  1328.5 | loss 0.051 | Q 15.00 | eps 0.010 | ETA 0.0 h
+step 1,950,000 |    478 steps/s | episodes  4091 | avg score (20)  1287.5 | loss 0.047 | Q 15.54 | eps 0.010 | ETA 0.0 h
+  eval @ 1,950,000: score 1530.0 ± 931.6 (random 305.0)
+step 1,960,000 |    478 steps/s | episodes  4105 | avg score (20)  1309.5 | loss 0.020 | Q 15.05 | eps 0.010 | ETA 0.0 h
+step 1,970,000 |    478 steps/s | episodes  4120 | avg score (20)  1493.0 | loss 0.020 | Q 15.26 | eps 0.010 | ETA 0.0 h
+step 1,980,000 |    478 steps/s | episodes  4134 | avg score (20)  1596.5 | loss 0.455 | Q 15.62 | eps 0.010 | ETA 0.0 h
+step 1,990,000 |    478 steps/s | episodes  4146 | avg score (20)  1622.0 | loss 0.029 | Q 15.40 | eps 0.010 | ETA 0.0 h
+step 2,000,000 |    478 steps/s | episodes  4159 | avg score (20)  1814.5 | loss 0.037 | Q 15.33 | eps 0.010 | ETA 0.0 h
+  eval @ 2,000,000: score 1536.0 ± 1079.9 (random 305.0)
+done. best eval score 1911.0. files in runs\dqn

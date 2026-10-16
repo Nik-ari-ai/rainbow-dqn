@@ -1,0 +1,9 @@
+===== run_all started 15.10.2026 12:56:20,25
+[15.10.2026 12:56:20,25] start rainbow_pixels 
+[15.10.2026 14:55:38,23] end rainbow_pixels (exit 0)
+[15.10.2026 14:55:38,23] evaluate Rainbow vs random
+[15.10.2026 14:56:18,73] demo video
+[15.10.2026 14:56:28,69] start dqn 
+[15.10.2026 16:06:24,71] end dqn (exit 0)
+[15.10.2026 16:06:24,71] final comparison
+===== run_all finished 15.10.2026 16:07:22,08

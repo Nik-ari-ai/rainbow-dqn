@@ -1,28 +1,9 @@
-# Python and notebooks
-.venv/
-venv/
 __pycache__/
-*.py[cod]
+*.pyc
 .ipynb_checkpoints/
-
-# Local settings and secrets
-.DS_Store
-.idea/
-.vscode/
-.env
-.env.*
-!.env.example
-
-# Model weights, training logs and recordings
-models/*
-!models/.gitkeep
-*.pt
-*.pth
-*.ckpt
-*.onnx
-*.zip
-runs/
-wandb/
+runs/*/memory.npz
+runs/*/checkpoint.pt
 *.mp4
-*.mov
-*.webm
+*.gif
+results/
+*.pth

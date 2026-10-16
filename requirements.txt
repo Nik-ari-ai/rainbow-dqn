@@ -1,11 +1,12 @@
-# PyTorch ставится отдельно (см. README): для RTX 5070 нужна сборка CUDA 12.8
-#   pip install torch --index-url https://download.pytorch.org/whl/cu128
-# Python 3.10-3.12
-torch>=2.7
-ale-py>=0.10        # Atari, ROM-ы входят в пакет
-opencv-python
-numpy
-plotly
-tqdm
-jupyterlab
+numpy>=1.24
+torch>=2.0
+gymnasium>=0.29
+pandas
 matplotlib
+scipy
+pillow
+imageio
+imageio-ffmpeg
+# optional:
+# pygame      - play.py (human play)
+# ale-py      - --env ale (original Atari Space Invaders)

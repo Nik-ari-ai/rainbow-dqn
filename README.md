@@ -1,28 +1,60 @@
-# Rainbow DQN — Space Invaders
+# Space Invaders from Scratch × Rainbow DQN
 
-Реализация: [Kaixhin/Rainbow](https://github.com/Kaixhin/Rainbow) (MIT, commit `1745b18`), перенесена в `src/` и переведена с `atari-py` на `ale-py`. Все 6 компонентов Rainbow: Double DQN, Prioritized Replay, Dueling, Multi-step (n=3), C51, Noisy Nets.
+RL course project, Innopolis University: Sergey Peshkov, Anton Kropotov, Arina Nikolaeva.
 
-## Установка (Windows, PowerShell)
+We wrote our own Space Invaders (pure Python/NumPy) as a Gymnasium environment with configurable
+**reward triggers** and **difficulty levels**. Then we trained a **Rainbow DQN** agent on it, with all six
+components implemented from scratch in PyTorch.
 
-```powershell
-python -m venv .venv
-.venv\Scripts\activate
-pip install torch --index-url https://download.pytorch.org/whl/cu128
+```
+space_invaders/        the game and the environment
+  game.py              rules, events (triggers), drawing, state vector
+  env.py               Gymnasium env: pixels (4x84x84) or vector obs, 6 actions, reward presets, levels 0-2
+rainbow/               the agent
+  model.py             Nature CNN / MLP torso, NoisyLinear, dueling C51 head
+  memory.py            prioritized n-step replay (sum tree), frame stacks rebuilt on sampling
+  agent.py             Rainbow update + switches for ablations / vanilla DQN
+  envs.py              our game or the original Atari game (ale-py)
+  evaluation.py        run episodes, summaries, random policy
+train.py               training with logs, evaluation, checkpoints, resume, curriculum
+evaluate.py            trained agent(s) vs random on the same seeds -> table + box plot
+demo.py                demo video (agent | random side by side, triggers on screen)
+play.py                play it yourself (pygame)
+notebooks/project.ipynb      shared notebook: environment, algorithm, worked example, results
+notebooks/kaggle_train.ipynb training on a Kaggle / Colab GPU
+tests/test_all.py      self-checks
+```
+
+## Quick start
+
+```bash
 pip install -r requirements.txt
-python -c "import torch; print(torch.cuda.is_available())"   # должно быть True
+python tests/test_all.py                                   # env, replay memory, agent
+python train.py --id quick --obs vector --steps 50000      # ~minutes on CPU, checks the whole pipeline
+python train.py --id rainbow_pixels --steps 1000000        # main run (GPU recommended)
+python evaluate.py --models runs/rainbow_pixels/model.pth --names Rainbow --episodes 30
+python demo.py --model runs/rainbow_pixels/model.pth --compare-random --out demo_vs_random.mp4
 ```
 
-## Обучение
+No GPU? Use `notebooks/kaggle_train.ipynb`: zip this folder, upload it to Kaggle as a dataset and run it with a GPU.
 
-```powershell
-python src/main.py --id spaceinv --game space_invaders --T-max 2000000 --checkpoint-interval 100000 --evaluation-interval 50000 --memory results/spaceinv/memory.pth.bz2
-```
+## Experiments the code supports
 
-`--T-max` считается в шагах агента (1 шаг = 4 кадра). Лучшая модель по оценке сохраняется в `results/<id>/model.pth`, метрики в `results/<id>/metrics.pth`, графики в `Reward.html`/`Q.html`.
-Продолжить после остановки: добавить `--model results/spaceinv/checkpoint.pth`.
+| Question | Command |
+|---|---|
+| Rainbow vs random | `train.py --id rainbow_pixels` then `evaluate.py` |
+| Rainbow vs vanilla DQN | `train.py --id dqn --dqn` |
+| Which component matters? | `--no-double`, `--no-per`, `--no-dueling`, `--n-step 1`, `--no-distributional`, `--no-noisy` |
+| Do reward triggers help? | `--reward shaped` vs `--reward score` |
+| Does a curriculum help? | `--curriculum "0:0,200000:1"` |
+| Pixels vs state vector | `--obs vector` |
+| Generalisation | `evaluate.py --level 2` on an agent trained on level 1 |
+| Original Atari game | `--env ale --preset atari` (needs `pip install ale-py`) |
 
-## Оценка
-
-```powershell
-python src/main.py --id eval --evaluate --model results/spaceinv/model.pth --evaluation-episodes 20
-```
+## Notes
+* 1 agent step = 4 game frames. Rewards are clipped to [−1, 1] during training, as in DQN/Rainbow on Atari;
+  logs and evaluation always report the real game score.
+* `--time-limit H` stops cleanly with a checkpoint. `--resume` continues from it. Add `--save-memory` to keep the
+  replay buffer between sessions, otherwise the buffer is refilled first.
+* Rainbow paper reference for Atari Space Invaders (200M frames): DQN 1 692, Rainbow 18 789. Our game has
+  different rules, so those numbers only show the order of magnitude, not a target.

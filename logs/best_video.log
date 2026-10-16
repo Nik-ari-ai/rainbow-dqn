@@ -1,0 +1,25 @@
+model from step 1950000, eval score 2286.0
+seed 1000: score 510, steps 366, waves 0
+seed 1001: score 3320, steps 1541, waves 5
+seed 1002: score 1770, steps 856, waves 3
+seed 1003: score 480, steps 290, waves 0
+seed 1004: score 400, steps 280, waves 0
+seed 1005: score 2250, steps 1078, waves 3
+seed 1006: score 960, steps 474, waves 1
+seed 1007: score 2620, steps 1192, waves 4
+seed 1008: score 480, steps 303, waves 0
+seed 1009: score 2440, steps 1244, waves 3
+seed 1010: score 2780, steps 1250, waves 4
+seed 1011: score 440, steps 241, waves 0
+seed 1012: score 2060, steps 981, waves 3
+seed 1013: score 800, steps 476, waves 1
+seed 1014: score 1870, steps 974, waves 3
+seed 1015: score 1710, steps 874, waves 3
+seed 1016: score 1150, steps 606, waves 2
+seed 1017: score 2210, steps 1094, waves 3
+seed 1018: score 1560, steps 853, waves 2
+seed 1019: score 730, steps 492, waves 1
+best seed 1001 with score 3320; mean of candidates 1527
+recorded replay: score 3320 (expected 3320), 1541 frames
+saved results\rainbow_best_game.mp4
+finished

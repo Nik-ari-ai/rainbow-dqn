@@ -1,0 +1,7 @@
+      Random: score    372.7 ±  196.6  (median 365, max 930)
+     Rainbow: score   1922.7 ±  805.2  (median 1990, max 3190)
+
+  agent  mean_score  std_score  median   min    max  mean_length  mean_waves  accuracy  x_random
+ Random      372.67     196.59   365.0  30.0  930.0       429.47        0.03      0.28      1.00
+Rainbow     1922.67     805.25  1990.0 490.0 3190.0       965.57        2.70      0.64      5.16
+plot: results\comparison.png
